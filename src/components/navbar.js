@@ -1,10 +1,5 @@
-import React from "react";
-import Navitem from "./navitem";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Component } from "react";
-import { Navbar } from "react-materialize";
-
+import React, { Component } from "react";
+import Navitem from "./Navitem";
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -33,15 +28,11 @@ class Navbar extends Component {
             activec={this.activeitem}
           ></Navitem>
           <Navitem
-            item="Education"
-            tolink="/education"
+            item="Projects"
+            tolink="/projects"
             activec={this.activeitem}
           ></Navitem>
-          <Navitem
-            item="Skills"
-            tolink="/skills"
-            activec={this.activeitem}
-          ></Navitem>
+
           <Navitem
             item="Contact"
             tolink="/contact"
