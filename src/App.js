@@ -1,23 +1,14 @@
 import React from "react";
-import "./App";
+import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import About from "./components/about";
-import NavBar from "./components/navbar";
-import Projects from "./components/Projects";
-import Contact from "./components/contact";
-import NotFoundPage from "./components/notFoundPage";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <NavBar />
-      <Switch>
-        <Route exact path="/" component={About} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Projects" component={Projects} />
-        <Route exact path="/Contact" component={Contact} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <div className="App">
+        <Navbar />
+      </div>
     </Router>
   );
 }
