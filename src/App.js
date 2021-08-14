@@ -1,35 +1,23 @@
 import React from "react";
 import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import About from "./components/about";
+import NavBar from "./components/navbar";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
+import NotFoundPage from "./components/notFoundPage";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        {/* Route for Home.js contents */}
-        <Route exact path="/">
-          <Home />
-        </Route>
-        {/* Route for About.js contents */}
-        <Route path="/About">
-          <About />
-        </Route>
-        {/* Route for Projects.js contents */}
-        <Route path="/Projects">
-          <Projects />
-        </Route>
-        {/* Route for Projects.js contents */}
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-      </div>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Projects" component={Projects} />
+        <Route exact path="/Contact" component={Contact} />
+        <Route component={NotFoundPage} />
+      </Switch>
     </Router>
   );
 }

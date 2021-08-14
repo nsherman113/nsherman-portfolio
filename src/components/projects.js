@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
 import SafeFlightImg from "../img/Screenshot 2021-02-08 201716.jpg";
 import RecessImg from "../img/Screenshot 2021-04-12 005555.png";
 import StockTalkImg from "../img/stock-talk image.png";
