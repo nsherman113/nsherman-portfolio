@@ -4,17 +4,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SafeFlightImg from "../img/Screenshot 2021-02-08 201716.jpg";
 import RecessImg from "../img/Screenshot 2021-04-12 005555.png";
 import StockTalkImg from "../img/stock-talk image.png";
-// import {stocktalkimg} from "C:/Users/noahs/Desktop/nsherman-portfolio/src/img/stock-talk image.png";
 
 const Projects = () => {
   return (
     <div class="container">
       <style>{"body { background-color: orange; }"}</style>
-      <h2>Projects</h2>
+      <h2 class="projects-header">Projects</h2>
       <div class="card-group">
-        <div class="card">
+        <div class="card projects">
           <a href="https://n8dogg59.github.io/teamTravel/" target="_blank">
-            <img src={SafeFlightImg} class="card-img-top" alt=""></img>
+            <img
+              src={SafeFlightImg}
+              class="card-img-top project-img"
+              alt=""
+            ></img>
           </a>
           <div class="card-body">
             <h5 class="card-title">SafeFlight</h5>
@@ -25,7 +28,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card projects">
           <a href="https://pacific-inlet-95494.herokuapp.com/" target="_blank">
             <img src={RecessImg} class="card-img-top" alt=""></img>
           </a>
@@ -42,7 +45,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card projects">
           <a
             href="https://limitless-refuge-10058.herokuapp.com/"
             target="_blank"

@@ -7,7 +7,7 @@ const aboutMe = () => {
   return (
     <div className="aboutApp">
       <style>{"body { background-color: orange; }"}</style>
-      <div className="container">
+      <div className="container about-me">
         <div className="aboutme-card">
           <img src={profileImg} class="profileImg" alt=""></img>
           <div className="card-header">

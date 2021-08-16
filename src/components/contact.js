@@ -1,20 +1,18 @@
 import React from "react";
 import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const Contact = () => {
   return (
     <div className="form">
       <style>{"body { background-color: orange; }"}</style>
-      <h2>Contact</h2>
-      <div className="card">
-        <div class="form-label">
+      <h2 class="contact-header">Contact</h2>
+      <div className="card contact">
+        <div class="form-label contact-label">
           <label for="exampleFormControlInput1" class="form-label">
             First Name
           </label>
           <input
             type="email"
-            class="form-control"
+            class="form-control contact-input"
             id="exampleFormControlInput1"
             placeholder="Name"
           ></input>

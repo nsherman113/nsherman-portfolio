@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
 
+* {
+  font-family: "Chicle";
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -38,12 +43,7 @@
     transform: rotate(360deg);
   }
 }
-/* .container {
-  background-color: rgb(0, 0, 0);
-} */
-body {
-  font-family: "Chicle";
-}
+
 .card-img,
 .card-img-bottom,
 .card-img-top {
@@ -51,7 +51,14 @@ body {
   height: 100%;
   /* width: 50px; */
   margin: auto;
+  opacity: 1;
+
+  transition: 0.5s ease;
 }
+.card-img-top:hover {
+  filter: blur(5px);
+}
+
 .container,
 .container-fluid,
 .container-lg,
@@ -77,11 +84,14 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-.h2,
+
 h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   color: beige;
 }
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -108,6 +118,51 @@ h2 {
   border-radius: 50%;
   width: 200px;
   margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: 80%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: beige;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 10px 10px rgb(242, 181, 68);
+}
+
+.contact-input {
+  background-color: beige;
+}
+.form-label {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.aboutme-card {
+  height: 80%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects {
+  height: 50%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects-header {
   margin-left: auto;
   margin-right: auto;
 }
