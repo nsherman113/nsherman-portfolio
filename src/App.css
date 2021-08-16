@@ -73,6 +73,10 @@
   margin: 0 auto;
   margin-top: 200px;
 }
+form {
+  height: auto;
+  width: auto;
+}
 .aboutme-card {
   position: relative;
   display: flex;
@@ -85,12 +89,13 @@
   border-radius: 0.25rem;
 }
 
-h2 {
+/* h2 {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 200px;
   width: 50%;
   color: beige;
-}
+} */
 
 .nav {
   display: flex;
@@ -123,10 +128,10 @@ h2 {
 }
 
 .contact {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
-
+  margin-top: 200px;
   height: 80%;
   width: 50%;
   margin-left: auto;
@@ -139,6 +144,12 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   box-shadow: 10px 10px rgb(242, 181, 68);
+}
+.contact-header {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 24%;
+  color: beige;
 }
 
 .contact-input {
@@ -163,7 +174,9 @@ h2 {
   margin-right: auto;
 }
 .projects-header {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 200px;
+  width: 100%;
+  color: beige;
 }
