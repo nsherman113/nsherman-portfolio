@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { Button, Checkbox, Form } from "semantic-ui-react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Contact = () => {
   return (

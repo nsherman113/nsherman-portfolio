@@ -8,8 +8,8 @@ const aboutMe = () => {
     <div className="aboutApp">
       <style>{"body { background-color: orange; }"}</style>
       <div className="container">
-        <div className="card">
-          <img src={profileImg} class="card-img-top" alt=""></img>
+        <div className="aboutme-card">
+          <img src={profileImg} class="profileImg" alt=""></img>
           <div className="card-header">
             <h3>About Me</h3>
           </div>
