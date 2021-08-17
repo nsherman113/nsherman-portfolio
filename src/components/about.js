@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 // import "C:/Users/noahs/Desktop/nsherman-portfolio/src/pages/about.js";
 
-import profileImg from "../img/IMG_1519 (2) 03.26.19.jpg";
+import profileImg from "../img/Barcelona.jpg";
 const aboutMe = () => {
   return (
     <div className="aboutApp">
