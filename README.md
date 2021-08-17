@@ -15,7 +15,7 @@ Build a web portfolio with navigation that allows user to view an About Me secti
 
 ### Image
 
-![image](https://user-images.githubusercontent.com/74440415/123029500-d6666a00-d3a6-11eb-99c8-33c4959e87d1.png)
+![image](https://user-images.githubusercontent.com/74440415/129651660-4796f91d-f8d8-484e-8a87-d63148d62c82.png)
 
 ### Deployable Application
 
