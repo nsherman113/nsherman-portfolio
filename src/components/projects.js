@@ -22,7 +22,7 @@ const Projects = () => {
           <div class="card-body">
             <h5 class="card-title">SafeFlight</h5>
             <p class="card-text">
-              SafeFlight is an interactive website that allows user to search
+              SafeFlight is an interactive website that allows users to search
               for flight data, while simultaneously presenting COVID data per
               the location searched.
             </p>
@@ -35,13 +35,9 @@ const Projects = () => {
           <div class="card-body">
             <h5 class="card-title">Recess</h5>
             <p class="card-text">
-              Recess is fullstack application that keeps track of the user's
-              weekly availability so they can schedule extra-curricular
-              activities. Once the user creates an account, they wil be prompted
-              to enter their sleep and work hours to calculate their free time.
-              The end user will then be able to select the activity category,
-              length of the activity, the type activity, and Recess will add it
-              to their weekly calendar.
+              Application that takes in a user's given constant schedule (i.e.
+              work and sleep hours) to auto generate a random activity that the
+              user selects and wishes to spend more time pursuing.
             </p>
           </div>
         </div>
@@ -55,12 +51,11 @@ const Projects = () => {
           <div class="card-body">
             <h5 class="card-title">Stock Talk</h5>
             <p class="card-text">
-              Stock-Talk is a social media application that allows users to
-              engage via a forum (or feed) by creating posts, liking other
-              posts, adding friends, etc. The user will have access to recent
-              stock activity per that given day, and can search to see what the
-              current price is for each stock which will allow for conversation
-              topic within the application.
+              Social media application that allows users to engage via forum (or
+              feed) by creating posts, liking other posts, adding friends, etc.
+              The user will have access to recent stock activity for that day,
+              and can search to see what the current price is for each stock to
+              make predictions and discuss trends within the stock community.
             </p>
           </div>
         </div>
