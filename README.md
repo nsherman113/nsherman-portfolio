@@ -11,11 +11,11 @@
 
 ### Project Description
 
-Build a web portfolio with navigation that allows user to view an About Me section, Projects section with all completed projects to date, and a Contact section with a form to submit user contact information.
+Portfolio with navigation to view About Me section, a Projects section with all completed projects to date, and a Contact section with a form to submit contact information.
 
 ### Image
 
-![image](https://user-images.githubusercontent.com/74440415/129651660-4796f91d-f8d8-484e-8a87-d63148d62c82.png)
+![image](https://user-images.githubusercontent.com/74440415/129656525-32c765bf-285f-4fbd-a2a8-64541d47c4b5.png)
 
 ### Deployable Application
 
