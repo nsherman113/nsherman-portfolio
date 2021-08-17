@@ -19,7 +19,7 @@ Build a web portfolio with navigation that allows user to view an About Me secti
 
 ### Deployable Application
 
-https://warm-island-90883.herokuapp.com/about
+https://warm-island-90883.herokuapp.com/
 
 ### Installation
 
