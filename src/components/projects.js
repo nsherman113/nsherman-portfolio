@@ -22,9 +22,10 @@ const Projects = () => {
           <div class="card-body">
             <h5 class="card-title">SafeFlight</h5>
             <p class="card-text">
-              SafeFlight is an interactive website that allows users to search
-              for flight data, while simultaneously presenting COVID data per
-              the location searched.
+              Website that allows users to search for flight data, while
+              simultaneously presenting COVID data per the location searched.
+              The purpose is to identify trends to better plan for trips given
+              current pandemic conditions.
             </p>
           </div>
         </div>
