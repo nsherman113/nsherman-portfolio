@@ -1,51 +1,28 @@
 import React from "react";
-import { useState } from "react";
+import emailjs from "emailjs-com";
 import "../App.css";
 
 const Contact = () => {
-  const [mailerState, setMailerState] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    message: "",
-  });
-  function handleStateChange(e) {
-    setMailerState((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  }
-  const submitEmail = async (e) => {
+  function sendEmail(e) {
     e.preventDefault();
-    console.log({ mailerState });
-    console.log("button submitted");
-    const response = await fetch("http://localhost:3001/send", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({ mailerState }),
-    })
-      .then((res) => res.json())
-      .then(async (res) => {
-        const resData = await res;
-        console.log(resData);
-        if (resData.status === "success") {
-          alert("Message Sent");
-        } else if (resData.status === "fail") {
-          alert("Message failed to send");
+
+    emailjs
+      .sendForm(
+        "service_i64prj8",
+        "template_67qiz6b",
+        e.target,
+        "user_6lcWM2GVeHRa0g4xbHDQH"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
         }
-      })
-      .then((res) => res.json())
-      .then(() => {
-        setMailerState({
-          email: "",
-          firstname: "",
-          lastname: "",
-          message: "",
-        });
-      });
-  };
+      );
+    e.target.reset();
+  }
   return (
     <div className="App form">
       <style>{"body { background-color: orange; }"}</style>
@@ -56,7 +33,7 @@ const Contact = () => {
           justifyContent: "center",
           alignItems: "center",
         }}
-        onSubmit={submitEmail}
+        onSubmit={sendEmail}
       >
         <fieldset
           style={{
@@ -69,35 +46,35 @@ const Contact = () => {
         >
           <legend class="contact-header">Contact</legend>
           <input
+            type="text"
             placeholder="First Name"
-            onChange={handleStateChange}
-            name="firstname"
-            value={mailerState.firstname}
+            name="first"
             class="contact-input"
           />
           <input
+            type="text"
             placeholder="Last Name"
-            onChange={handleStateChange}
-            name="lastname"
-            value={mailerState.lastname}
+            name="last"
             class="contact-input"
           />
           <input
+            type="email"
             placeholder="Email"
-            onChange={handleStateChange}
             name="email"
-            value={mailerState.email}
             class="contact-input"
           />
           <textarea
             style={{ minHeight: "200px" }}
             placeholder="Message"
-            onChange={handleStateChange}
             name="message"
-            value={mailerState.message}
             class="contact-input"
           />
-          <button class="submitBtn">Send Message</button>
+          <input
+            type="submit"
+            id="button"
+            value="Send Message"
+            class="submitBtn"
+          />
         </fieldset>
       </form>
     </div>
