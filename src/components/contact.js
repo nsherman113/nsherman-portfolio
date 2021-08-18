@@ -1,53 +1,105 @@
 import React from "react";
+import { useState } from "react";
 import "../App.css";
+
 const Contact = () => {
+  const [mailerState, setMailerState] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+  });
+  function handleStateChange(e) {
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    console.log({ mailerState });
+    console.log("button submitted");
+    const response = await fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ mailerState }),
+    })
+      .then((res) => res.json())
+      .then(async (res) => {
+        const resData = await res;
+        console.log(resData);
+        if (resData.status === "success") {
+          alert("Message Sent");
+        } else if (resData.status === "fail") {
+          alert("Message failed to send");
+        }
+      })
+      .then((res) => res.json())
+      .then(() => {
+        setMailerState({
+          email: "",
+          firstname: "",
+          lastname: "",
+          message: "",
+        });
+      });
+  };
   return (
-    <div className="form">
+    <div className="App form">
       <style>{"body { background-color: orange; }"}</style>
-      <h2 class="contact-header">Contact</h2>
-      <div className="card contact">
-        <div class="form-label contact-label">
-          <label for="exampleFormControlInput1" class="form-label">
-            First Name
-          </label>
+      <form
+        style={{
+          display: "flex",
+          height: "100vh",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        onSubmit={submitEmail}
+      >
+        <fieldset
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            width: "50%",
+          }}
+          class="contact"
+        >
+          <legend class="contact-header">Contact</legend>
           <input
-            type="email"
-            class="form-control contact-input"
-            id="exampleFormControlInput1"
-            placeholder="Name"
-          ></input>
-
-          <label for="exampleFormControlInput1" class="form-label">
-            Last Name
-          </label>
+            placeholder="First Name"
+            onChange={handleStateChange}
+            name="firstname"
+            value={mailerState.firstname}
+            class="contact-input"
+          />
           <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
             placeholder="Last Name"
-          ></input>
-
-          <label for="exampleFormControlInput1" class="form-label">
-            Email address
-          </label>
+            onChange={handleStateChange}
+            name="lastname"
+            value={mailerState.lastname}
+            class="contact-input"
+          />
           <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          ></input>
-        </div>
-        <div class="form-label">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Message
-          </label>
+            placeholder="Email"
+            onChange={handleStateChange}
+            name="email"
+            value={mailerState.email}
+            class="contact-input"
+          />
           <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
-      </div>
+            style={{ minHeight: "200px" }}
+            placeholder="Message"
+            onChange={handleStateChange}
+            name="message"
+            value={mailerState.message}
+            class="contact-input"
+          />
+          <button class="submitBtn">Send Message</button>
+        </fieldset>
+      </form>
     </div>
   );
 };

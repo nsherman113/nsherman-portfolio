@@ -12,7 +12,11 @@ const Projects = () => {
       <h2 class="projects-header">Projects</h2>
       <div class="card-group">
         <div class="card projects">
-          <a href="https://n8dogg59.github.io/teamTravel/" target="_blank">
+          <a
+            href="https://n8dogg59.github.io/teamTravel/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img
               src={SafeFlightImg}
               class="card-img-top project-img"
@@ -30,7 +34,11 @@ const Projects = () => {
           </div>
         </div>
         <div class="card projects">
-          <a href="https://pacific-inlet-95494.herokuapp.com/" target="_blank">
+          <a
+            href="https://pacific-inlet-95494.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img src={RecessImg} class="card-img-top" alt=""></img>
           </a>
           <div class="card-body">
@@ -45,6 +53,7 @@ const Projects = () => {
         <div class="card projects">
           <a
             href="https://limitless-refuge-10058.herokuapp.com/"
+            rel="noreferrer"
             target="_blank"
           >
             <img src={StockTalkImg} class="card-img-top" alt=""></img>

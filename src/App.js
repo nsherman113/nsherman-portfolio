@@ -7,6 +7,7 @@ import NavBar from "./components/navbar";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import NotFoundPage from "./components/notFoundPage";
+
 function App() {
   return (
     <Router>
