@@ -15,13 +15,23 @@ const aboutMe = () => {
           </div>
           <div className="card-body">
             <p>
-              I'm a Full Stack Developer proficient in React.js, Node.js, as
-              well as Javascript based programming with a background in
-              accounting and finance. Task oriented with a determination to
-              solve problems and work with others to build more efficient
-              processes.. <br />
+              Hey there 👋
+              <br />
+              <br />
+              My name is Noah, I'm a full stack engineer out of Austin Texas. I
+              have a background in economics, accounting and finance, as well as
+              computer programming, and I'm currently looking to pursue a career
+              in Software Development utlizing the Full Stack. I am proficient
+              in Javascript with experience covering technologies such as
+              React.js, Express, Node, MySQL, MongoDB, HTML, CSS, et al.
+              <br />
+              <br />
               When I'm not working or studying, I enjoy watching live music,
-              traveling, playing golf, being outdoors, and gaming.
+              traveling, reading, playing golf, being outdoors, and gaming.
+              <br />
+              <br />I am passionate about learning new things and working with
+              others to solve problems and create more efficient processes. I
+              look forward to connecting with you!
             </p>
           </div>
         </div>
