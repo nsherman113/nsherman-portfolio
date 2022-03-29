@@ -19,19 +19,18 @@ const aboutMe = () => {
               <br />
               <br />
               My name is Noah, I'm a full stack engineer out of Austin Texas. I
-              have a background in economics, accounting and finance, as well as
+              have a background in accounting and finance, as well as
               computer programming, and I'm currently looking to pursue a career
               in Software Development utilizing the Full Stack. I am proficient
-              in Javascript with experience covering technologies such as
+              in Javascript, and have experience working with technologies such as
               React.js, Express, Node, MySQL, MongoDB, HTML, CSS, et al.
               <br />
               <br />
-              When I'm not working or studying, I enjoy watching live music,
+              When I'm not working or studying, I enjoy live music,
               traveling, reading, playing golf, being outdoors, and gaming.
               <br />
-              <br />I am passionate about learning new things and working with
-              others to solve problems and create more efficient processes. I
-              look forward to connecting with you!
+              <br />I'm passionate about learning new things, and connecting with
+              others to solve problems and bring creative ideas to fruition. 
             </p>
           </div>
         </div>
