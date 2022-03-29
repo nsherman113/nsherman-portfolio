@@ -30,7 +30,7 @@ const aboutMe = () => {
               traveling, reading, playing golf, being outdoors, and gaming.
               <br />
               <br />I'm passionate about learning new things, and connecting with
-              others to solve problems and bring creative ideas to fruition. I look forward to connecting with you!
+              others to solve problems, and bring creative ideas to fruition. I look forward to connecting with you!
             </p>
           </div>
         </div>
